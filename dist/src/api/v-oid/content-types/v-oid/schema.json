@@ -1,0 +1,35 @@
+{
+    "kind": "collectionType",
+    "collectionName": "v_oids",
+    "info": {
+        "singularName": "v-oid",
+        "pluralName": "v-oids",
+        "displayName": "VOid"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "Title": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "Logo": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false,
+            "required": true
+        },
+        "Sobre": {
+            "type": "text",
+            "required": true,
+            "unique": true
+        }
+    }
+}
