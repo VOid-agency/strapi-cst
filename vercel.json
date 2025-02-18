@@ -7,11 +7,11 @@
     }
   ],
   "env": {
-    "DATABASE_CLIENT": "postgres",
-    "DATABASE_HOST": "ep-noisy-resonance-a4rddkzt-pooler.us-east-1.aws.neon.tech", 
-    "DATABASE_NAME": "neondb", 
-    "DATABASE_USERNAME": "neondb_owner", 
-    "DATABASE_PASSWORD": "npg_3WahY9TKbBJt"
+    "PGCLIENT": "postgres",
+    "POSTGRES_HOST": "ep-noisy-resonance-a4rddkzt-pooler.us-east-1.aws.neon.tech", 
+    "PGDATABASE": "neondb", 
+    "PGUSER": "neondb_owner", 
+    "PGPASSWORD": "npg_3WahY9TKbBJt"
   },
   "routes": [
     {
