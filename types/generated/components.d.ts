@@ -62,6 +62,23 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedVoid extends Struct.ComponentSchema {
+  collectionName: 'components_shared_voids';
+  info: {
+    displayName: 'void';
+    icon: 'alien';
+  };
+  attributes: {
+    numbers: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique &
+      Schema.Attribute.DefaultTo<0>;
+    Tittle: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -70,6 +87,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.void': SharedVoid;
     }
   }
 }

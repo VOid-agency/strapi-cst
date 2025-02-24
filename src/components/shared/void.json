@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_voids",
+  "info": {
+    "displayName": "void",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "Tittle": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "numbers": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "unique": true
+    }
+  }
+}
